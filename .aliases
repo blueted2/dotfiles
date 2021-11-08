@@ -1,0 +1,5 @@
+#!/bin/sh
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
