@@ -44,5 +44,4 @@ if [ ! -f "$ALACRITTY" ]; then
     echo "Installing alacritty..."
     apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
     cargo install alacritty
-    git clone https://github.com/catppuccin/alacritty.git ~/.config/alacritty/catppuccin
 fi
