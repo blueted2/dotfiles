@@ -1,6 +1,0 @@
-[submodule "dot_config/zsh-autosuggestions"]
-	path = dot_config/zsh-autosuggestions
-	url = https://github.com/zsh-users/zsh-autosuggestions
-[submodule "dot_config/oh-my-zsh"]
-	path = dot_config/oh-my-zsh
-	url = https://github.com/ohmyzsh/ohmyzsh
