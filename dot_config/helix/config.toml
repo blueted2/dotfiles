@@ -7,6 +7,7 @@ cursorline = true
 color-modes = true
 auto-save = true
 soft-wrap.enable = true
+bufferline = "always"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -56,6 +57,8 @@ mode.insert = "INSERT"
 mode.select = "SELECT"
 
 
+[editor.file-picker]
+hidden = false
 
 [keys.normal."+"]
 e = ":run-shell-command echo hi"
