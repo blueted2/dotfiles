@@ -7,7 +7,9 @@
 export EDITOR="/usr/bin/hx"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.config/oh-my-zsh"
-
+export HSA_OVERRIDE_GFX_VERSION=10.3.0 
+export HIP_VISIBLE_DEVICES=0 
+export PYTORCH_ENABLE_MPS_FALLBACK=1
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -76,7 +78,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pipenv virtualenv zsh-autosuggestions alias-finder)
+plugins=(git pipenv virtualenv zsh-autosuggestions alias-finder frontend-search web-search)
 
 zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
 
@@ -92,6 +94,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/MATLAB/R2023a/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
+
+source /home/gregory/export-esp.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
