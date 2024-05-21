@@ -26,11 +26,11 @@ fi
 #     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # fi
 
-TMUX="/usr/bin/tmux"
-if [ ! -f "$TMUX" ]; then
-    echo "Installing tmux..."
-    sudo apt install tmux
-fi
+# TMUX="/usr/bin/tmux"
+# if [ ! -f "$TMUX" ]; then
+#     echo "Installing tmux..."
+#     sudo apt install tmux
+# fi
 
 ZELLIJ="$HOME/.cargo/bin/zellij"
 if [ ! -f "$ZELLIJ" ]; then
@@ -39,9 +39,9 @@ if [ ! -f "$ZELLIJ" ]; then
 fi
 
     
-ALACRITTY="$HOME/.cargo/bin/alacritty"
-if [ ! -f "$ALACRITTY" ]; then
-    echo "Installing alacritty..."
-    apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
-    cargo install alacritty
-fi
+# ALACRITTY="$HOME/.cargo/bin/alacritty"
+# if [ ! -f "$ALACRITTY" ]; then
+#     echo "Installing alacritty..."
+#     apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3
+#     cargo install alacritty
+# fi
