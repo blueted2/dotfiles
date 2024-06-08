@@ -15,6 +15,8 @@ source /home/gregory/.local/share/lscolors.sh
 declare -A ZINIT  # initial Zinit's hash definition, if configuring before loading Zinit, and then:
 ZINIT[NO_ALIASES]=1
 
+export PATH=~/.cargo/bin:$PATH
+
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
    mkdir -p "$(dirname $ZINIT_HOME)"
@@ -90,4 +92,3 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
